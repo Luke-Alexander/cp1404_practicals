@@ -1,13 +1,13 @@
 text = input('Text: ')
-text = text.lower().split(' ')
+word_list = text.lower().split(' ')
 text_bank = {}
-longest_word = ()
+longest_word = ""
 
-for word in text:
-    if len(word)>len(longest_word):
+for word in word_list:
+    if len(word) > len(longest_word):
         longest_word = word
     if word in text_bank:
-        text_bank[word] = text_bank[word] + 1
+        text_bank[word] += 1
     else:
         text_bank[word] = 1
 
