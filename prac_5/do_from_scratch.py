@@ -1,4 +1,3 @@
-"""Luke Alexander"""
 text = input('Text: ')
 text = text.lower().split(' ')
 text_bank = {}
