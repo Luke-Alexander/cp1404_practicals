@@ -1,5 +1,5 @@
 def main():
-=
+
     incomes = []
     total_months = int(input("How many months? "))
 
