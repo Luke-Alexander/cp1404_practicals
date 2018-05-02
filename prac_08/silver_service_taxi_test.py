@@ -12,4 +12,4 @@ print("Current fare is $", prius.get_fare())
 print(prius)
 
 car = SilverServiceTaxi("car",100,3)
-print(car.price_per_km, car.flagfall)
+print(car.price_per_km, car.FLAGFALL)
