@@ -15,3 +15,9 @@ try:
 except FileExistsError:
     pass
 
+for directory_name, subdirectoris, filenames in os.walk("."):
+    for filename in filenames:
+        file = os.path.splitext(filename)
+        if file[1] == extensions[0]:
+            shutil.move(filename, )
+        elif file[1] == extensions[1]
