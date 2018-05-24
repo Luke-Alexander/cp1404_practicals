@@ -6,11 +6,11 @@ MAX_DECREASE = 0.05  # 5%
 MIN_PRICE = 1
 MAX_PRICE = 100.0
 INITIAL_PRICE = 10.0
-OUTPUT_FILE =
+out_file =open("capitalist.txt", 'w')
 day = 0
 price = INITIAL_PRICE
 print("${:,.2f}".format(price))
-out_file = open(OUTPUT_FILE, 'w')
+# out_file = open(OUTPUT_FILE, 'w')
 
 while price >= MIN_PRICE and price <= MAX_PRICE:
     price_change = 0

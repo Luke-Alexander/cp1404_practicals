@@ -49,6 +49,7 @@ def run_tests():
     # You should test both of these
     test_car = Car(fuel=10)
 
+    assert test_car.fuel == 10, "Car does no set fuel correctly"
 
 run_tests()
 
@@ -77,8 +78,8 @@ def format_sentence(phrase):
     'Hello.'
     >>> format_sentence("It is an ex parrot.")
     'It is an ex parrot.'
-    >>> format_sentence("i deserve a HD")
-    'I deserve a HD.'
+    >>> format_sentence("Return")
+    'Return.'
     """
     if phrase[-1] == ".":
         pass

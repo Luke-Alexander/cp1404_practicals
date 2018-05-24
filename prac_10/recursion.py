@@ -41,4 +41,12 @@ def pyramid_scheme(n, blocks=0):
     else:
         print(blocks)
 
+def pyramid_scheme_2(rows):
+    if rows == 1:
+        return 1
+    else:
+        return rows + pyramid_scheme_2(rows - 1)
+
+print("$$", pyramid_scheme_2(5))
+
 pyramid_scheme(6)
